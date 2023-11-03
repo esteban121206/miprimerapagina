@@ -1,0 +1,158 @@
+body {
+  margin: 5px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+#seleccion-principal-1 {
+  margin-left: 50px;
+}
+
+.menu .li-menu {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: rgb(117, 117, 117);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conten{
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+
+
+  #check {
+  display: none;
+}
+
+header a i {
+  color: white;
+  font-size: 3em;
+  padding: o, 5em;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1.1em;
+}
+
+header nav ul li a {
+  color: white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+header nav ul li a:hover {
+  color: rgb(255, 26, 26);
+}
+
+.seccion-1 {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+padding: 2em; 
+}
+ 
+.seccion-1 div img {
+  height: 15em;
+  border: 50px;
+
+}
+
+.seleccion-principal-1{
+clear: both;
+background-color: rgb(105, 72, 72);
+width: 100%;
+text-align: center;
+padding: 25px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+
+
+
+.checkbtn {
+  font-size: 25px;
+  color: rgb(0, 22, 148);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.checkbtn {
+  display: block;
+}
+
+#encabezado ul {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  text-align: center;
+
+  top: 80px;
+  left: 100%;
+  transition: all 0.5s ;
+}
+
+#check:checked ul {
+  left: 0%;
+  display: block;
+}
+
+.li-menu {
+  display: block;
+  margin: 0px ;
+  line-height: 30px;
+}
+
+a {
+  font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+  body header  {
+    background-color: rgb(252, 0, 0);
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    top: 50px;
+    left: 0;
+    background-color: rgb(34, 34, 165);
+  }
+  #check:checked ~ .menu {
+    display: flex;
+
+  }
+  }
